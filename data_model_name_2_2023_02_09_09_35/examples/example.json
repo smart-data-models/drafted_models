@@ -1,0 +1,9 @@
+{
+  "caca": "text",
+   "_property1": "a3", 
+  "_property2": "2023-02-07T20:00:00", 
+  "id": "ngsi-ld:0001",
+   "type": "data_model_name_2",  
+  "_property4": "uri:ngsi-ld:0001",
+  "fernando": 3
+}
