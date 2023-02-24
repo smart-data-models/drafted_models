@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/subject_/data_model_name_2/schema.json,",
+  "title": "title_of_the_data_model_",
+  "description": "global_descripton_of_the_data_model_",
+  "modelTags": "",
+  "derivedFrom": "",
+  "required": [
+    "id",
+    "type"
+  ],
+  "license": "https://smart-data-models.github.io/subject_/data_model_name_2/LICENSE.md",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "type": "string"
+    },
+    "_property1": {
+      "type": "string",
+      "description": "Property. Description of the property 1. Reference open regulation if available. Units or models followed by the attribute"
+    },
+    "_property2": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Property. Description of the property 2"
+    },
+    "_property4": {
+      "type": "string",
+      "format": "uri",
+      "description": "Property. Description of the property 3"
+    },
+    "caca": {
+      "type": "string",
+      "description": "Property. descripton of caca"
+    },
+    "fernando": {
+      "type": "number",
+      "description": "Relationship. description of fernando"
+    },
+    "Francisco": {
+      "type": "number",
+      "description": "Property. description of number"
+    }
+  }
+}
