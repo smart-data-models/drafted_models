@@ -1,0 +1,6 @@
+{
+    "id": "urn:ngsi-ld:0001",
+    "type": "platform",
+    "category": "text",
+    "platform": "a3"
+}
