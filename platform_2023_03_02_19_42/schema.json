@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/subject/platform/schema.json,",
+  "title": "data model of a platform",
+  "description": "global description of the data model",
+  "modelTags": "",
+  "derivedFrom": "",
+  "required": [
+    "id",
+    "type"
+  ],
+  "license": "https://smart-data-models.github.io/subject/platform/LICENSE.md",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "description": "Property. Description of the property 1. Reference open regulation if available. Units or models followed by the attribute"
+    },
+    "registrationNumber": {
+      "type": "string",
+      "description": "Property. Description of the property 2"
+    },
+    "LEI Code": {
+      "type": "number",
+      "description": "Property. description of the counter"
+    },
+    "headquarterAddress": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    },
+    "headquarterAddress.street-address": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    },
+    "headquarterAddress.postal-code": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    },
+    "headquarterAddress.region": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    },
+    "headquarterAddress.locality": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    },
+    "headquarterAddress.country-name": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    },
+    "legalAddress.street-address": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    },
+    "legalAddress.postal-code": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    },
+    "legalAddress.region": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    },
+    "legalAddress.locality": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    },
+    "legalAddress.country": {
+      "type": "string",
+      "description": "Property. descrtion pending"
+    }
+  }
+}
