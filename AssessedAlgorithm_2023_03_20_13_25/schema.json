@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/datamodel.MachineLearning/AssessedAlgorithm/schema.json,",
+  "title": "Algorithm assess in terms of data sovereignty",
+  "description": "This data model represents the assessment of an AI algorithm, initially offered as a service",
+  "modelTags": "",
+  "derivedFrom": "",
+  "required": [
+    "id",
+    "type"
+  ],
+  "license": "https://smart-data-models.github.io/datamodel.MachineLearning/AssessedAlgorithm/LICENSE.md",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "type": "string"
+    },
+    "globalQualification": {
+      "type": "string",
+      "description": "Property. Global qualification of the algorithm"
+    },
+    "socialImpact": {
+      "type": "string",
+      "description": "Property. if the algorithm has any kind of social impact assessment"
+    },
+    "checkBias": {
+      "type": "object",
+      "description": "Property. If the algorthm has been check against these potential bias. race, ethnicity, gender, nationality, income, sexual orientation, ability and political or religious belief.",
+      "properties": {}
+    },
+    "iso27017": {
+      "type": "boolean",
+      "description": "Property. If the service is compliant with ISO 27017 standard"
+    },
+    "iso27701": {
+      "type": "boolean",
+      "description": "Property. If the service is compliant with ISO 27701 standard"
+    },
+    "iso27018": {
+      "type": "boolean",
+      "description": "Property. If the service is compliant with ISO 27018 standard"
+    },
+    "contactPoint": {
+      "type": "object",
+      "description": "Property. point of contact for feedback and questions on the algorithm service",
+      "properties": {}
+    }
+  }
+}
