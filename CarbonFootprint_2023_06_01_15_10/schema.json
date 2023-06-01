@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/dataModel.BatteriePass/CarbonFootprint/schema.json,",
+  "title": "CarbonFootprint for battery life cycle",
+  "description": "",
+  "modelTags": "",
+  "derivedFrom": "",
+  "required": [
+    "id",
+    "type"
+  ],
+  "license": "https://smart-data-models.github.io/dataModel.BatteriePass/CarbonFootprint/LICENSE.md",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "type": "string"
+    },
+    "Ni": {
+      "type": "number",
+      "description": "Property. Niquel percentage"
+    },
+    "Co": {
+      "type": "number",
+      "description": "Property. Cobalt"
+    }
+  }
+}
