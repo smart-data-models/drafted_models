@@ -1,0 +1,27 @@
+{
+    "@context": {
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+        "schema": "https://schema.org/",
+        "smartTourism": "https://smartdatamodels.org/dataModel.TourismDestinations/"
+        "id": "@id",
+        "type": "@type",
+        "country": "schema:addressCountry",
+        "ageRange": "smartTourism:ageRange",
+        "gender": "smartTourism:gender",
+        "travelPartyComposition": "smartTourism:travelPartyComposition",
+        "lodgingType": "smartTourism:lodgingType",
+        "lodgingCategory": "smartTourism:lodgingCategory",
+        "lodgingSize": "smartTourism:lodgingSize",
+        "roomOfStayType": "smartTourism:roomOfStayType",
+        "board": "smartTourism:board",
+        "bookingChannel": "smartTourism:bookingChannel",
+        "reservationLeadTime": "smartTourism:reservationLeadTime",
+        "stayLength": "smartTourism:stayLength",
+        "totalExpenditure": "smartTourism:totalExpenditure",
+        "totalAccomodationAndBoardExpenditure": "smartTourism:totalAccomodationAndBoardExpenditure",
+        "totalExtraExpenditure": "smartTourism:totalExtraExpenditure",
+        "avgDailyExpenditure": "smartTourism:avgDailyExpenditure",
+        "avgDailyAccomodationAndBoardExpenditure": "smartTourism:avgDailyAccomodationAndBoardExpenditure",
+        "avgDailyExtraExpenditure": "smartTourism:avgDailyExtraExpenditure"
+    }
+}
