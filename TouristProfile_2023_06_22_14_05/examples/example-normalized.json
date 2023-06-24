@@ -1,7 +1,10 @@
 {
     "id": "urn:hosp:tourpro:0001",
     "type": "TouristProfile",
-    "country": "NL",
+    "country": {
+        "type": "Text",
+        "value": "NL"
+    },
     "ageRange": {
             "type": "Text",
             "value": "30-34"
