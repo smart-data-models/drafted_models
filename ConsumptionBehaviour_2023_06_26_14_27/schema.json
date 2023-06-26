@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/dataModel.TourismDestinations/ConsumptionBehaviour/schema.json,",
+  "title": "Consumption Behaviour",
+  "description": "This model is designed to record and track the consumption of various resources such as electricity, diesel, and water over a specified period.",
+  "modelTags": "",
+  "derivedFrom": "",
+  "required": [
+    "id",
+    "type"
+  ],
+  "license": "https://smart-data-models.github.io/dataModel.TourismDestinations/ConsumptionBehaviour/LICENSE.md",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "type": "string"
+    },
+    "sourceOfConsumption": {
+      "type": "string",
+      "description": "Relationship. The object that is generating the consumption"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Property. Start date of the consumption"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Property. End date of the consumption"
+    },
+    "resourceType": {
+      "type": "string",
+      "description": "Property. Type of resource consumed"
+    },
+    "initialMeasurement": {
+      "type": "number",
+      "description": "Property. Initial measurement of the resource"
+    },
+    "finalMeasurement": {
+      "type": "number",
+      "description": "Property. Final measurement of the resource"
+    },
+    "usersInvolved": {
+      "type": "number",
+      "description": "Property. Number of persons/users involved in the consumption"
+    }
+  }
+}
