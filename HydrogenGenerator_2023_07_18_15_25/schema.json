@@ -1,0 +1,173 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/dataModel.SmartEnergy/HydrogenGenerator/schema.json,",
+  "title": "data model of electrolyzer",
+  "description": "Model of Hydrogen Generators for Laboratories (Electrolyzer) (0-4000 cc/min)",
+  "modelTags": "",
+  "derivedFrom": "",
+  "required": [
+    "id",
+    "type"
+  ],
+  "license": "https://smart-data-models.github.io/dataModel.SmartEnergy/HydrogenGenerator/LICENSE.md",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Property. Unique ID of the object"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "HydrogenGenerator"
+      ],
+      "description": "Property. It has to be HydrogenGenerator"
+    },
+    "title": {
+      "type": "string",
+      "description": "Property. Title of the form element"
+    },
+    "operatingTemperatureMin": {
+      "type": "number",
+      "description": "Property. General information: Minimal operating temperature [?C] "
+    },
+    "operatingTemperatureMax": {
+      "type": "number",
+      "description": "Property. General information: Maximal operating temperature [?C]"
+    },
+    "storageTemperatureMin": {
+      "type": "number",
+      "description": "Property. General information: Minimal storage temperature [?C]"
+    },
+    "storageTemperatureMax": {
+      "type": "number",
+      "description": "Property. General information: Maximal storage temperature [?C]"
+    },
+    "operatingHumidity": {
+      "type": "number",
+      "description": "Property. General information: Operating Humiditiy (non-condensing) [%]"
+    },
+    "noise": {
+      "type": "number",
+      "description": "Property. General information: Noise [dB(A)]"
+    },
+    "ingressProtection": {
+      "type": "string",
+      "description": "Property. General information: Ingress protection (e.g. IP20)"
+    },
+    "pollutionDegreeRating": {
+      "type": "number",
+      "description": "Property. General information: pollution degree rating (e.g. 2)"
+    },
+    "waterConsumption": {
+      "type": "number",
+      "description": "Property. General information: How many litres of water to produce 1 litres of H2 [l]"
+    },
+    "altitude": {
+      "type": "string",
+      "description": "Property. General information: Operating altitude (e.g. <2000m) "
+    },
+    "electrolyticCell": {
+      "type": "string",
+      "description": "Property. General information: Type of electrolytic cell (PEM, AEM)"
+    },
+    "dryingSystem": {
+      "type": "string",
+      "description": "Property. General information: Type of drying system (e.g. PSA (Pressure Swing Adsorption))"
+    },
+    "h2Purity": {
+      "type": "string",
+      "description": "Property. General information: H2 purity (e.g. >99.99999% referred to O2, Dew-point)"
+    },
+    "outletPressure": {
+      "type": "number",
+      "description": "Property. General information: Outlet pressure (e.g. 12) [bar]"
+    },
+    "h2FlowRate": {
+      "type": "number",
+      "description": "Property. General information: maximal H2 flow rate [cc/min]"
+    },
+    "netWeight": {
+      "type": "number",
+      "description": "Property. General information: Net weight (water tank empty)"
+    },
+    "RS485": {
+      "type": "string",
+      "description": "Property. Communication: RS485 (e.g. Standard)"
+    },
+    "RS232": {
+      "type": "string",
+      "description": "Property. Communication: RS232 (e.g. Standard)"
+    },
+    "USB": {
+      "type": "string",
+      "description": "Property. Communication: USB (e.g. Standard)"
+    },
+    "LAN": {
+      "type": "string",
+      "description": "Property. Communiaction: LAN (e.g. Optional)"
+    },
+    "parallelModeCapability": {
+      "type": "string",
+      "description": "Property. Software function: Parallel mode capability (e.g. Standard) "
+    },
+    "fillCanisterFunction": {
+      "type": "string",
+      "description": "Property. Software function: Fill canister function (e.g. Standard)"
+    },
+    "quality": {
+      "type": "string",
+      "description": "Property. Water: water qualtiy (e.g. Deionized, ASTM II, <0.1uS)"
+    },
+    "supplyPressureMin": {
+      "type": "number",
+      "description": "Property. Water: minimal supply pressure [bar]"
+    },
+    "supplyPressureMax": {
+      "type": "number",
+      "description": "Property. Water: maximal supply pressure [bar]"
+    },
+    "supplyFlowRateMin": {
+      "type": "number",
+      "description": "Property. Water: minimal supply flow rate [l/min]"
+    },
+    "supplyFlowRateMax": {
+      "type": "number",
+      "description": "Property. Water: minimal supply flow rate [l/min]"
+    },
+    "internalWaterTankCapacity": {
+      "type": "number",
+      "description": "Property. Water: Internal water tank capacity [l]"
+    },
+    "externalWaterTankCapacity": {
+      "type": "number",
+      "description": "Property. Water. External tank capacity [l]"
+    },
+    "connectionType": {
+      "type": "string",
+      "description": "Property. Electrical data: Connection type (e.g. IEC320-C14)"
+    },
+    "supplyVoltage": {
+      "type": "string",
+      "description": "Property. Electrical data: Supply Voltage (e.g. 100-240Vac (?10%) 50/60Hz)"
+    },
+    "nominalPower": {
+      "type": "number",
+      "description": "Property. Electrical data: Maximale nominal Power [W]"
+    },
+    "fuseRating": {
+      "type": "string",
+      "description": "Property. Electrical data: Fuse rating (5x20 mm) (e.g. 6,3A (250VAC ? T ? L / 35A))"
+    },
+    "hydrogenOutlet": {
+      "type": "string",
+      "description": "Property. Connections: Hydrogen outlet (e.g. 1/8? Compression Fitting)"
+    },
+    "water": {
+      "type": "string",
+      "description": "Property. Connections: Water connection (e.g. Quick Release Push in Fitting)"
+    }
+  }
+}
