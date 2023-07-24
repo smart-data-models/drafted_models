@@ -18,42 +18,42 @@
       "format": "uri"
     },
     "type": {
-                        "type": "string",
-                        "enum": [
-                                                "ConsumptionBehaviour"
-                                                ],
-                                                "description": "Property. Entity type ConsumptionBehaviour"
-                },
-    "sourceOfConsumption": {
       "type": "string",
-      "description": "Relationship. The object that is generating the consumption"
+      "enum": [
+        "ConsumptionBehaviour"
+        ],
+        "description": "Property. Entity type ConsumptionBehaviour."
+    },
+    "sourceOfConsumption": {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
+      "description": "Relationship. The object that is generating the consumption."
     },
     "startDate": {
       "type": "string",
       "format": "date-time",
-      "description": "Property. Start date of the consumption"
+      "description": "Property. Start date of the consumption."
     },
     "endDate": {
       "type": "string",
       "format": "date-time",
-      "description": "Property. End date of the consumption"
+      "description": "Property. End date of the consumption."
     },
     "resourceType": {
       "type": "string",
       "enum": ["Diesel","Petrol","Electricity","Gas","Water"],
-      "description": "Property. Type of resource consumed"
+      "description": "Property. Type of resource consumed."
     },
     "initialMeasurement": {
       "type": "number",
-      "description": "Property. Initial measurement of the resource"
+      "description": "Property. Initial measurement of the resource."
     },
     "finalMeasurement": {
       "type": "number",
-      "description": "Property. Final measurement of the resource"
+      "description": "Property. Final measurement of the resource."
     },
     "usersInvolved": {
       "type": "number",
-      "description": "Property. Number of persons/users involved in the consumption"
+      "description": "Property. Number of persons/users involved in the consumption."
     }
   }
 }
