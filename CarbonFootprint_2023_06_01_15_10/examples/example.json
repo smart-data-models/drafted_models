@@ -1,6 +1,0 @@
-{
-    "id": "urn:ngsi-ld:0001",
-    "type": "CarbonFootprint",
-    "Ni": 0.01,
-    "Co": 0.2
-}
