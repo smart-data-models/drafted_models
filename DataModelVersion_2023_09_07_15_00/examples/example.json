@@ -1,0 +1,9 @@
+{
+    "id": "urn:ngsi-ld:0001",
+    "type": "DataModelVersion",
+    "subject": "dataModel.TourismDestinations",
+    "dataModel": "Event",
+    "version": "0.0.1",
+    "date": "10/05/2021 05:04 PM",
+    "url": "https://raw.githubusercontent.com/smart-data-models/dataModel.TourismDestinations/9a98d426f9de88de3c28a5b88a95485fae333d17/Event/schema.json"
+}
