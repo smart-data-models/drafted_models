@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/dataModel.SDM/DataModelVersion/schema.json,",
+  "title": "Descriptors of a version of a data model curated at the Smart Data Models initiative",
+  "description": "it stores the main data about a specific version of a data model curate at the smart datamodels initiative",
+  "modelTags": "",
+  "derivedFrom": "",
+  "required": [
+    "id",
+    "type"
+  ],
+  "license": "https://smart-data-models.github.io/dataModel.SDM/DataModelVersion/LICENSE.md",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Property. Unique Id of the entity"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "DataModelVersion"
+      ],
+      "description": "Property. It has to be DataModelVersion"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Property. Subject of the data model"
+    },
+    "dataModel": {
+      "type": "string",
+      "description": "Property. Data model name"
+    },
+    "version": {
+      "type": "string",
+      "description": "Property. Version of the data model"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Property. Date of the commit of the current data model"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Property. URL to the github repository where the data model version is published"
+    },
+    "commit": {
+      "type": "string",
+      "description": "Property. Hash of the commit of the data model version"
+    }
+  }
+}
