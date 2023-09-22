@@ -1,0 +1,7 @@
+{
+    "id": "DuplicatedAttrsCheck:001",
+    "type": "DuplicatedAttrsCheck",
+    "name": {
+      "value": "moderate"
+    }
+  }
