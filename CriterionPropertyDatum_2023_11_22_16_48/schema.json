@@ -55,12 +55,12 @@
     },
     "Time": {
       "type": "string",
-      "format": "date-time",
+      "format": "time",
       "description": "Property. A time used to specify the value of a constraint or as a response to an information requirement."
     },
     "Date": {
       "type": "string",
-      "format": "date-time",
+      "format": "date",
       "description": "Property. A date used to specify the value of a constraint or as a response to an information requirement."
     },
     "Indicator": {
