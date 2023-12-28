@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/dataModel.ACRIS/ServiceFormElement/schema.json,",
+  "title": "Service form element of the ACRIS data model",
+  "description": "The Service Form Element encloses any number of actual booking elements (Service Elements) that\nshould be displayed in a semantic context. It allows adding descriptive information to the collection of Ser-\nvice Elements",
+  "modelTags": "",
+  "derivedFrom": "",
+  "required": [
+    "id",
+    "type"
+  ],
+  "license": "https://smart-data-models.github.io/dataModel.ACRIS/ServiceFormElement/LICENSE.md",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Property. Unique ID of the object"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "ServiceFormElement"
+      ],
+      "description": "Property. It has to be ServiceFormElement"
+    },
+    "title": {
+      "type": "string",
+      "description": "Property. Title of the form element"
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "Property. Description of the element"
+    },
+    "serviceElements": {
+      "type": "array",
+      "description": "Relationship. List of booking elements See section 3.4.4 of the original document  https://acris.aero/publicdownloads/file/19/",
+      "items": {
+        "type": ""
+      }
+    },
+    "footerText": {
+      "type": "string",
+      "description": "Property. Footer Text"
+    },
+    "waterquality": {
+      "type": "object",
+      "description": "Property. the description of a water quality",
+      "properties": {}
+    },
+    "vessels": {
+      "type": "array",
+      "description": "Property. test",
+      "items": {
+        "type": ""
+      }
+    }
+  }
+}
