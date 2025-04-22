@@ -1,0 +1,10 @@
+{
+    "id": "urn:ngsi-ld:FuelCellMeasurement:santander:FuelCellMeasurement:Generator:a34f24b",
+    "type": "ElectrolyzerMeasurement",
+    "powerGenerated": 509.87,
+    "hydrogenFlowConsumed": 2387.5,
+    "dataProvider": "tlmat-unican",
+    "dateCreated": "2019-01-01T12:00:00Z",
+    "dateModified": "2025-03-01T12:00:00Z",
+    "refFuelCell": "urn:ngsi-ld:FuelCell:santander:EnergyStorage:fuelCell:0001"
+}
