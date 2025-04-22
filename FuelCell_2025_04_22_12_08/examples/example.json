@@ -1,0 +1,16 @@
+{
+    "id": "urn:ngsi-ld:FuelCell:santander:EnergyStorage:fuelCell:0001",
+    "type": "FuelCell",
+    "description": "mixed generator model ~004 with maximum power 22w",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -4.184943709787973,
+            43.379971307869766
+        ]
+    },
+    "status": "ON",
+    "name": "FuelCell #0001",
+    "maxHydrogenFlowConsumed": 3000,
+    "maxPowerGenerated": 600
+}
