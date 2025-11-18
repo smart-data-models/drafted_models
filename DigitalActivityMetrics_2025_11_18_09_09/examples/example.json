@@ -1,0 +1,286 @@
+{
+    "id": "urn:ngsi-ld:DigitalActivityMetrics:ga4:123456789",
+    "type": "DigitalActivityMetrics",
+    "accountId": {
+        "type": "Property",
+        "value": "123456789"
+    },
+    "accountName": {
+        "type": "Property",
+        "value": "1. PROPERTY GA4"
+    },
+    "platform": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:DigitalNetwork:Ga4"
+    },
+    "publisherPlatform": {
+        "type": "Property",
+        "value": "ga4"
+    },
+    "ownedBy": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Company:MyCompany"
+    },
+    "paidSessions": [
+        {
+            "type": "Property",
+            "value": 1,
+            "observedAt": "2025-11-11T00:00:00Z",
+            "granularity": {
+                "type": "Property",
+                "value": "daily"
+            },
+            "unit": {
+                "type": "Property",
+                "value": "count"
+            },
+            "datasetId": "seg|pp=ga4|q=|cm=|sm=|cg=Unassigned|org=0|gr=daily",
+            "segmentChannelGroup": {
+                "type": "Property",
+                "value": "Unassigned"
+            },
+            "publisherPlatform": {
+                "type": "Property",
+                "value": "ga4"
+            },
+            "sourceView": {
+                "type": "Property",
+                "value": "desarrollo-ariadne.curated_ga4_api.campaigns_by_channel"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 1,
+            "observedAt": "2025-11-11T00:00:00Z",
+            "granularity": {
+                "type": "Property",
+                "value": "daily"
+            },
+            "unit": {
+                "type": "Property",
+                "value": "count"
+            },
+            "datasetId": "seg|pp=ga4|q=|cm=|sm=|cg=Paid Other|org=0|gr=daily",
+            "segmentChannelGroup": {
+                "type": "Property",
+                "value": "Paid Other"
+            },
+            "publisherPlatform": {
+                "type": "Property",
+                "value": "ga4"
+            },
+            "sourceView": {
+                "type": "Property",
+                "value": "desarrollo-ariadne.curated_ga4_api.campaigns_by_channel"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 2,
+            "observedAt": "2025-11-11T00:00:00Z",
+            "granularity": {
+                "type": "Property",
+                "value": "daily"
+            },
+            "unit": {
+                "type": "Property",
+                "value": "count"
+            },
+            "datasetId": "seg|pp=ga4|q=|cm=|sm=|cg=Direct|org=0|gr=daily",
+            "segmentChannelGroup": {
+                "type": "Property",
+                "value": "Direct"
+            },
+            "publisherPlatform": {
+                "type": "Property",
+                "value": "ga4"
+            },
+            "sourceView": {
+                "type": "Property",
+                "value": "desarrollo-ariadne.curated_ga4_api.campaigns_by_channel"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 1,
+            "observedAt": "2025-11-11T00:00:00Z",
+            "granularity": {
+                "type": "Property",
+                "value": "daily"
+            },
+            "unit": {
+                "type": "Property",
+                "value": "count"
+            },
+            "datasetId": "seg|pp=ga4|q=|cm=|sm=|cg=Organic Video|org=0|gr=daily",
+            "segmentChannelGroup": {
+                "type": "Property",
+                "value": "Organic Video"
+            },
+            "publisherPlatform": {
+                "type": "Property",
+                "value": "ga4"
+            },
+            "sourceView": {
+                "type": "Property",
+                "value": "desarrollo-ariadne.curated_ga4_api.campaigns_by_channel"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 1,
+            "observedAt": "2025-11-11T00:00:00Z",
+            "granularity": {
+                "type": "Property",
+                "value": "daily"
+            },
+            "unit": {
+                "type": "Property",
+                "value": "count"
+            },
+            "datasetId": "seg|pp=ga4|q=|cm=|sm=|cg=Organic Social|org=0|gr=daily",
+            "segmentChannelGroup": {
+                "type": "Property",
+                "value": "Organic Social"
+            },
+            "publisherPlatform": {
+                "type": "Property",
+                "value": "ga4"
+            },
+            "sourceView": {
+                "type": "Property",
+                "value": "desarrollo-ariadne.curated_ga4_api.campaigns_by_channel"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 1,
+            "observedAt": "2025-11-12T00:00:00Z",
+            "granularity": {
+                "type": "Property",
+                "value": "daily"
+            },
+            "unit": {
+                "type": "Property",
+                "value": "count"
+            },
+            "datasetId": "seg|pp=ga4|q=|cm=|sm=|cg=Email|org=0|gr=daily",
+            "segmentChannelGroup": {
+                "type": "Property",
+                "value": "Email"
+            },
+            "publisherPlatform": {
+                "type": "Property",
+                "value": "ga4"
+            },
+            "sourceView": {
+                "type": "Property",
+                "value": "desarrollo-ariadne.curated_ga4_api.sessions_by_channel"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 5,
+            "observedAt": "2025-11-12T00:00:00Z",
+            "granularity": {
+                "type": "Property",
+                "value": "daily"
+            },
+            "unit": {
+                "type": "Property",
+                "value": "count"
+            },
+            "datasetId": "seg|pp=ga4|q=|cm=|sm=|cg=Paid Search|org=0|gr=daily",
+            "segmentChannelGroup": {
+                "type": "Property",
+                "value": "Paid Search"
+            },
+            "publisherPlatform": {
+                "type": "Property",
+                "value": "ga4"
+            },
+            "sourceView": {
+                "type": "Property",
+                "value": "desarrollo-ariadne.curated_ga4_api.sessions_by_channel"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 1,
+            "observedAt": "2025-11-12T00:00:00Z",
+            "granularity": {
+                "type": "Property",
+                "value": "daily"
+            },
+            "unit": {
+                "type": "Property",
+                "value": "count"
+            },
+            "datasetId": "seg|pp=ga4|q=|cm=|sm=|cg=Organic Search|org=0|gr=daily",
+            "segmentChannelGroup": {
+                "type": "Property",
+                "value": "Organic Search"
+            },
+            "publisherPlatform": {
+                "type": "Property",
+                "value": "ga4"
+            },
+            "sourceView": {
+                "type": "Property",
+                "value": "desarrollo-ariadne.curated_ga4_api.campaigns_by_channel"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 3,
+            "observedAt": "2025-11-12T00:00:00Z",
+            "granularity": {
+                "type": "Property",
+                "value": "daily"
+            },
+            "unit": {
+                "type": "Property",
+                "value": "count"
+            },
+            "datasetId": "seg|pp=ga4|q=|cm=|sm=|cg=Paid Social|org=0|gr=daily",
+            "segmentChannelGroup": {
+                "type": "Property",
+                "value": "Paid Social"
+            },
+            "publisherPlatform": {
+                "type": "Property",
+                "value": "ga4"
+            },
+            "sourceView": {
+                "type": "Property",
+                "value": "desarrollo-ariadne.curated_ga4_api.campaigns_by_channel"
+            }
+        },
+        {
+            "type": "Property",
+            "value": 2,
+            "observedAt": "2025-11-12T00:00:00Z",
+            "granularity": {
+                "type": "Property",
+                "value": "daily"
+            },
+            "unit": {
+                "type": "Property",
+                "value": "count"
+            },
+            "datasetId": "seg|pp=ga4|q=|cm=|sm=|cg=Referral|org=0|gr=daily",
+            "segmentChannelGroup": {
+                "type": "Property",
+                "value": "Referral"
+            },
+            "publisherPlatform": {
+                "type": "Property",
+                "value": "ga4"
+            },
+            "sourceView": {
+                "type": "Property",
+                "value": "desarrollo-ariadne.curated_ga4_api.sessions_by_channel"
+            }
+        }
+    ]
+}
