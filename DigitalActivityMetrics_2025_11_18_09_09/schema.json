@@ -1,0 +1,349 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/DigitalMarketing/DigitalActivityMetrics/schema.json,",
+  "title": "Unified metrics model for digital platforms including social media, web analytics, ads, and search performance",
+  "description": "DigitalActivityMetrics is a harmonized data model designed to aggregate activity and performance metrics coming from multiple digital platforms, including social media networks (Meta, Instagram, X, YouTube, LinkedIn), web analytics systems (Google Analytics 4), search performance sources (Google Search Console), and advertising platforms (Google Ads, Meta Ads, YouTube Ads, etc.).\n\nThis model enables a unified representation of heterogeneous digital metrics?such as impressions, interactions, clicks, conversions, reach, spend, followers, engagement, sessions, and search queries?under a single NGSI-LD entity structure.",
+  "modelTags": "",
+  "derivedFrom": "",
+  "required": [
+    "id",
+    "type"
+  ],
+  "license": "https://smart-data-models.github.io/DigitalMarketing/DigitalActivityMetrics/LICENSE.md",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Property. Unique identifier of the DigitalActivityMetrics entity. Must follow a valid URI/URN structure."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "DigitalActivityMetrics"
+      ],
+      "description": "Property. It has to be DigitalActivityMetrics"
+    },
+    "accountId": {
+      "type": "object",
+      "description": "Property. Identifier of the digital account, such as a Meta Ads account ID, GA4 property ID, YouTube channel ID, X Ads account, GSC site URL, etc.",
+      "properties": {}
+    },
+    "accountName": {
+      "type": "object",
+      "description": "Property. Human-readable name of the digital account (e.g., page name, channel name, GA4 property name).",
+      "properties": {}
+    },
+    "platform": {
+      "type": "object",
+      "description": "Relationship. Relationship to the platform entity associated with this metric record. It shall point to an entity of type DigitalNetwork (defined in a separate data model), representing the logical digital platform or ecosystem (e.g., Meta, X, Instagram, YouTube, GA4, Google Ads, Google Search Console, etc.).",
+      "properties": {}
+    },
+    "publisherPlatform": {
+      "type": "object",
+      "description": "Property. Publishing platform where the metric originates. Useful when a single platform includes multiple sources (e.g., GA4 reporting Search Console or Google Ads data).",
+      "properties": {}
+    },
+    "ownedBy": {
+      "type": "object",
+      "description": "Relationship. Relationship to the Company entity associated with this metric record. It shall point to an entity of type Company.",
+      "properties": {}
+    },
+    "organicAddToCarts": {
+      "type": "object",
+      "description": "Property. Number of organic add-to-cart events. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicAvgViewDurationSeconds": {
+      "type": "object",
+      "description": "Property. Average view duration in seconds for organic video views. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicCheckouts": {
+      "type": "object",
+      "description": "Property. Number of organic checkout events. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicClicks": {
+      "type": "object",
+      "description": "Property. Organic clicks on ads or content. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentQuery.",
+      "properties": {}
+    },
+    "organicComments": {
+      "type": "object",
+      "description": "Property. Number of organic comments. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicCtr": {
+      "type": "object",
+      "description": "Property. Click-through rate for organic traffic. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentQuery.",
+      "properties": {}
+    },
+    "organicDislikes": {
+      "type": "object",
+      "description": "Property. Number of organic dislikes. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicEcommercePurchases": {
+      "type": "object",
+      "description": "Property. Number of organic ecommerce purchases. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicEngagedSessions": {
+      "type": "object",
+      "description": "Property. Number of organic engaged sessions. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicFans": {
+      "type": "object",
+      "description": "Property. Total number of fans for the account from organic activity. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicFirstTimePurchasers": {
+      "type": "object",
+      "description": "Property. Number of organic first-time purchasers. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicFollowers": {
+      "type": "object",
+      "description": "Property. Total number of followers for the account from organic activity. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicFollows": {
+      "type": "object",
+      "description": "Property. Number of organic follows generated. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicImpressions": {
+      "type": "object",
+      "description": "Property. Organic ad impressions. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentQuery.",
+      "properties": {}
+    },
+    "organicInteractions": {
+      "type": "object",
+      "description": "Property. Total organic interactions (combined engagement actions). Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicItemRefundAmount": {
+      "type": "object",
+      "description": "Property. Refund amount associated with organic items. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicItemViewEvents": {
+      "type": "object",
+      "description": "Property. Number of organic item view events. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicItemsPurchased": {
+      "type": "object",
+      "description": "Property. Number of items purchased from organic traffic. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicKeyEvents": {
+      "type": "object",
+      "description": "Property. Number of organic key events. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicKeyEventsGenerateLead": {
+      "type": "object",
+      "description": "Property. Number of organic key events of type 'generate_lead'. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicLikes": {
+      "type": "object",
+      "description": "Property. Number of organic likes. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicMinutesWatched": {
+      "type": "object",
+      "description": "Property. Total minutes watched for organic video views. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicNewUsers": {
+      "type": "object",
+      "description": "Property. Number of organic new users. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicOrganicAvgPosition": {
+      "type": "object",
+      "description": "Property. Average search result position for organic traffic. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicOrganicClicks": {
+      "type": "object",
+      "description": "Property. Numeric metric 'OrganicClicks' for organic activity. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicOrganicImpressions": {
+      "type": "object",
+      "description": "Property. Organic search impressions as seen in analytics for organic traffic. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicPosition": {
+      "type": "object",
+      "description": "Property. Average search result position for organic traffic. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentQuery.",
+      "properties": {}
+    },
+    "organicPurchaseRevenue": {
+      "type": "object",
+      "description": "Property. Purchase revenue from organic traffic. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicReach": {
+      "type": "object",
+      "description": "Property. Estimated number of unique users reached in organic activity. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicReactions": {
+      "type": "object",
+      "description": "Property. Total number of organic reactions (like, love, wow, etc.). Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicRedMinutesWatched": {
+      "type": "object",
+      "description": "Property. Total minutes watched from premium (Red) organic views. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicRedViews": {
+      "type": "object",
+      "description": "Property. Total premium (Red) organic views. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicSaved": {
+      "type": "object",
+      "description": "Property. Number of organic saves of content. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicScreenPageViews": {
+      "type": "object",
+      "description": "Property. Number of organic screen or page views. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicSessions": {
+      "type": "object",
+      "description": "Property. Number of organic analytics sessions. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicShares": {
+      "type": "object",
+      "description": "Property. Number of organic shares. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicSubscribersGained": {
+      "type": "object",
+      "description": "Property. Number of organic subscribers gained. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicSubscribersLost": {
+      "type": "object",
+      "description": "Property. Number of organic subscribers lost. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicTotalAdRevenue": {
+      "type": "object",
+      "description": "Property. Total ad revenue from organic traffic. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicTotalPurchasers": {
+      "type": "object",
+      "description": "Property. Total number of organic purchasers in the interval. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicTotalRevenue": {
+      "type": "object",
+      "description": "Property. Total revenue from organic traffic. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicTotalUsers": {
+      "type": "object",
+      "description": "Property. Total number of organic users in the interval. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicTransactions": {
+      "type": "object",
+      "description": "Property. Number of organic transactions. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicUserEngagementDurationSeconds": {
+      "type": "object",
+      "description": "Property. Total user engagement duration in seconds for organic traffic. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "organicVideosAddedToPlaylists": {
+      "type": "object",
+      "description": "Property. Number of organic times videos were added to playlists. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicVideosRemovedFromPlaylists": {
+      "type": "object",
+      "description": "Property. Number of organic times videos were removed from playlists. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "organicViews": {
+      "type": "object",
+      "description": "Property. Number of organic views. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidClicks": {
+      "type": "object",
+      "description": "Property. Paid clicks on ads or content. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidConversions": {
+      "type": "object",
+      "description": "Property. Number of paid conversions attributed to the activity. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidEngagements": {
+      "type": "object",
+      "description": "Property. Paid engagements (platform-defined sum of interactions such as clicks, likes, shares, etc.). Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidFollows": {
+      "type": "object",
+      "description": "Property. Number of paid follows generated. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidFrequency": {
+      "type": "object",
+      "description": "Property. Average number of times a user was exposed in paid activity. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidImpressions": {
+      "type": "object",
+      "description": "Property. Paid ad impressions. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidInteractions": {
+      "type": "object",
+      "description": "Property. Total paid interactions (combined engagement actions). Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidReach": {
+      "type": "object",
+      "description": "Property. Estimated number of unique users reached in paid activity. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidReplies": {
+      "type": "object",
+      "description": "Property. Numeric metric 'Replies' for paid activity. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidRetweets": {
+      "type": "object",
+      "description": "Property. Numeric metric 'Retweets' for paid activity. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    },
+    "paidSessions": {
+      "type": "object",
+      "description": "Property. Number of paid analytics sessions. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata. Such as segmentCampaignName, segmentSourceMedium, segmentChannelGroup.",
+      "properties": {}
+    },
+    "paidSpend": {
+      "type": "object",
+      "description": "Property. Total paid media spend. Represented as an NGSI-LD Property with numeric 'value', 'observedAt', 'granularity', 'unit' and optional segmentation metadata.",
+      "properties": {}
+    }
+  }
+}
